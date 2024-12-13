@@ -1,0 +1,189 @@
+/* Job Management */
+
+/* Changing color with toggle */
+/* Modify heading and content font colors */
+.job-management h1 span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.job-management h1 {
+  color: #eaeaea;
+  text-transform: uppercase;
+}
+
+.job-management {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+.job-management h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #b9b607;
+  padding: 10px;
+  text-align: left;
+  font-size: 18px; /* Increased font size for table headers */
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #ffffff; /* Lighter color for table data */
+  font-size: 2rem; /* Set a base font size for table data */
+  max-width: 200px; /* Set a max-width to prevent overflow */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Search bar */
+.search {
+  flex: 0 0 50%; /* Reduced the width to 50% of the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.search__input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: #333333;
+  background-color: #f4f2f2;
+  border: none;
+  padding: 10px 50px 10px 40px; /* Adjusted padding for a smaller look */
+  border-radius: 50px; /* Adjusted for a smaller curve */
+  width: 80%; /* Reduced width to 80% */
+  margin-left: -34px;
+  margin-right: -50px;
+  transition: all 0.2s;
+}
+
+.search__input:focus {
+  outline: none;
+  width: 90%; /* A bit of expansion on focus, but not too wide */
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #999999;
+}
+
+.search__button {
+  border: none;
+  background-color: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.search__button:focus {
+  outline: none;
+}
+
+.search__button:active {
+  transform: translateY(2px);
+}
+
+.search__icon {
+  height: 20px;
+  width: 20px;
+  fill: #999999;
+}
+
+/* download button */
+.btn-download-pdf {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 20px; /* Reduced margin */
+  letter-spacing: 2px; /* Slightly reduced spacing */
+  background-color: transparent; /* Ensure background is transparent */
+}
+
+/* Done Job report button */ 
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.done-jobs-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns child elements to the right */
+  margin-top: -3.5rem; /* Spacing above the button */
+}
+
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+

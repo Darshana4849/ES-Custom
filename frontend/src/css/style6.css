@@ -1,0 +1,26 @@
+/* Order Management */
+
+/* Changing color with toggle */
+/* Modify heading and content font colors */
+.order-management h1 span {
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+  
+  .order-management h1 {
+    color: #eaeaea;
+    text-transform: uppercase;
+  }
+  
+  .order-management {
+    margin-left: 270px;
+    padding: 20px;
+  }
+  
+  .order-management h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+ 
+  

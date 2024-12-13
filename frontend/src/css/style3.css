@@ -1,0 +1,77 @@
+/* Slidebar */
+
+.sidebar {
+    width: 272px;
+    height: 100vh;
+    background-color: #333; /* Dark color for the sidebar */
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Changing color with toggle */
+/* Modify heading and content font colors */
+.sidebar .logo span{
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+
+
+.sidebar .dashboard {
+    margin-bottom: 20px;
+}
+
+.sidebar .dashboard-button {
+   
+    width: 20rem;
+    display: inline-block;
+    font-size: 24px;
+    font-family: monospace;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px; /* Adjust padding for button effect */
+    background-color: #494444; /* Change background color as needed */
+    border: none;
+    border-radius: 5px; /* Add rounded corners if desired */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.sidebar .dashboard-button:hover {
+    background-color: #b0b30f; /* Darker shade for hover */
+}
+
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White color for the logo text */
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff; /* White color for the sidebar links */
+    font-size: 19px;
+}
+
+ul li a:hover {
+    color: #c2cf05; /* Optional: Highlight color on hover */
+    font-weight: bold;
+}

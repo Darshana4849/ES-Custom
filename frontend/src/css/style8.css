@@ -1,0 +1,89 @@
+/* Signup css */
+/* Modify font color and text transformation for heading and content spans */
+.heading span,
+.home .content h3 span,
+.login-form h1 span,
+.login-form p span,
+.signup-form h1 span,
+.signup-form p span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+/* Style spans in the astronaut-section headings as well */
+.astronaut-info h2 span,
+.astronaut-info p span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+
+
+
+/* Signup page general styles */
+.signup-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #121212;
+  }
+  
+  /* Left Form Section */
+  .signup-form {
+    flex: 1;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+  }
+  
+  .signup-form h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .signup-form p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form .user-box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .signup-form .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .signup-form .user-box input:focus ~ label,
+  .signup-form .user-box input:valid ~ label,
+  .signup-form .user-box label.shrink {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+  }
+  

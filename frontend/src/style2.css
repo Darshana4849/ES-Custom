@@ -1,0 +1,365 @@
+/* Job.js CSS */ 
+
+/* Modify heading and content font colors */
+.heading span, .home .content h3 span, .login-form h1 span, .login-form p span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+/* Update astronaut-section headings as well */
+.astronaut-info h2 span, .astronaut-info p span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+/* General Layout */
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #121212; /* Dark background for the whole page */
+}
+
+/* Left Login Form */
+.login-form {
+  flex: 1;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.login-form h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.login-form p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.google-login {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.login-form .form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divider {
+  text-align: center;
+  margin: 10px 0;
+  color: #777;
+}
+
+.form-options {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-options a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.signup-option {
+  margin-top: 20px;
+}
+
+.signup-option p {
+  font-size: 0.9rem;
+}
+
+.signup-option a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+/* Right Astronaut Section */
+.astronaut-section {
+  flex: 1;
+  background-image: url('../public/assets/images/image1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.astronaut-info {
+  text-align: center;
+}
+
+.astronaut-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.astronaut-info p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+
+
+/* button css */
+.submit-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 20px; /* Reduced margin */
+  letter-spacing: 2px; /* Slightly reduced spacing */
+  background-color: transparent; /* Ensure background is transparent */
+}
+
+.submit-btn:hover {
+  background: #fff;
+  color: #272727;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out; /* Smooth transition */
+}
+
+.submit-btn span {
+  position: absolute;
+  display: block;
+}
+
+.submit-btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff);
+  animation: btn-anim1 1.5s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.submit-btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fff);
+  animation: btn-anim2 1.5s linear infinite;
+  animation-delay: 0.375s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.submit-btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #fff);
+  animation: btn-anim3 1.5s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.submit-btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #fff);
+  animation: btn-anim4 1.5s linear infinite;
+  animation-delay: 1.125s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+/* form css */
+.user-box {
+  position: relative;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label,
+.user-box label.shrink {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* Update the textarea for service description */
+.user-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff; /* Text color */
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff; /* Bottom border */
+  outline: none;
+  background: #333; /* Dark background */
+}
+
+
+/* login (Related to Social Accounts): */
+.social-message {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.line {
+  height: 2px;
+  flex: 1 1 0%;
+  background-color: rgba(55, 65, 81, 1);
+}
+
+.social-message .message {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  color: rgb(255, 255, 255);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons .icon {
+  border-radius: 0.125rem;
+  padding: 0.75rem;
+  border: none;
+  background-color: transparent;
+  margin-left: 8px;
+}
+
+.social-icons .icon svg {
+  height: 3rem;
+  width: 3rem;
+  fill: #fff;
+}
+
+
+.login-container .social-message .message p{
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 20px;
+    color: white; /* Set label color to white */
+  }
+
+
+  .gender-box {
+    margin-bottom: 20px;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.gender-options input {
+    margin-right: 10px;
+}

@@ -1,0 +1,47 @@
+.employee-management {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.employee-management h1 span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.employee-management h1 {
+    color: #eaeaea;
+    text-transform: uppercase;
+}
+
+.employee-management h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* or your desired background */
+    border: none; /* removes the button border */
+    cursor: pointer; /* shows pointer on hover */
+    padding: 10px; /* add padding for better touch targets */
+    transition: background-color 0.3s ease;
+}
+
+.icon-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* change background on hover */
+    border-radius: 5px; /* optional rounded corners */
+}
+
+.icon-button svg {
+    color: #007bff; /* change to your desired icon color */
+    font-size: 20px; /* adjust icon size */
+}
+
+

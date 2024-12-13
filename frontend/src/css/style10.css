@@ -1,0 +1,21 @@
+/* Vehicle Management */
+
+/* Styling for the heading */
+.vehicle-management h1 span {
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+  
+  .vehicle-management h1 {
+    color: #eaeaea;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .vehicle-management {
+    margin-left: 270px;
+    padding: 20px;
+  }
+  
+  

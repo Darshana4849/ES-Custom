@@ -1,0 +1,184 @@
+/* style18.css */
+
+.order-profile-container {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    max-width: 800px;
+    margin: 0 auto;
+    background-image: url('../../public/assets/images/theme.jpeg'); /* Include your vehicle-themed image */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay for the image */
+  }
+  
+  .order-profile-header {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #ff9800; /* Orange highlight for a bold title */
+  }
+  
+  .order-profile-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .order-profile-details {
+    flex: 1;
+    border: 1px solid #ff9800; /* Highlight color */
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05); /* Slightly transparent background */
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .order-profile-details p {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    color: #e0e0e0;
+  }
+  
+  .order-profile-details strong {
+    color: #ff9800; /* Matching the highlight theme */
+  }
+  
+  .order-profile-details:hover {
+    transform: translateY(-10px); /* Lift effect */
+    background: rgba(255, 255, 255, 0.1); /* Lighter background on hover */
+  }
+  
+  .dark-background {
+    background-color: #121212; /* Even darker for the overall background */
+    min-height: 100vh;
+    padding-top: 3rem;
+  }
+  
+  /* Add responsive design */
+  @media screen and (max-width: 768px) {
+    .order-profile-content {
+      flex-direction: column;
+    }
+  }
+  
+  .order-profile-container {
+    padding: 20px;
+    background-color: #333; /* Dark background */
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  .order-profile-header {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f39c12;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .search-input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #e67e22;
+  }
+  
+  .order-profile-content {
+    text-align: left;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 50%;
+  }
+  
+  .order-profile-details p {
+    font-size: 18px;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  
+  .update-button {
+    background-color: #27ae60; /* Green color for update button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .update-button:hover {
+    background-color: #f39c12; /* Darker green on hover */
+  }
+  
+  .cancel-button {
+    background-color: #f39c12; /* Green color for update button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-button:hover {
+    background-color: #f39c12; /* Darker green on hover */
+  }
+  
+  .edit-button {
+    background-color: #f39c12; /* Original button color for edit */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+  }
+
+  .delete-button {
+    background-color: #9a0000; /* Original button color for edit */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #9a0000; /* Darker orange on hover */
+  }
+  

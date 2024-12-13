@@ -1,0 +1,24 @@
+/* Inventory Management */
+
+/* Changing color with toggle */
+/* Modify heading and content font colors */
+.inventory-management h1 span {
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+  
+  .inventory-management h1 {
+    color: #eaeaea;
+    text-transform: uppercase;
+  }
+  
+  .inventory-management {
+    margin-left: 270px;
+    padding: 20px;
+  }
+  
+  .inventory-management h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
